@@ -6,7 +6,7 @@ $loader = new \Twig\Loader\FilesystemLoader('./templates');
 $twig = new \Twig\Environment($loader, ['cache' => false]);
 
 // Routing
-$route = each($_GET);
+$route = @each($_GET);
 $route = $route[0];
 
 $template = isset($route) ? $route : 'home_page';
