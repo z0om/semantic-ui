@@ -1,0 +1,32 @@
+{% extends '_base.wm.html.twig' %}
+
+{% block content %}
+
+<h1>Pronostics passés <span class="histo">» Username</span></h1>
+
+<table class="ui compact table">
+  <thead>
+    <tr>
+      <th></th>
+      <th class="center aligned">Evènement</th>
+      <th class="center aligned">Match</th>
+      <th class="center aligned">Type de pari</th>
+      <th class="center aligned">Cote</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in 1..20 %}
+    <tr class="{{ random(['positive', 'negative']) }}">
+      <td class="center aligned one wide">12/10/19</td>
+      <td><i class="futbol outline icon"></i> Event name {{ i }}</td>
+      <td>Team name {{ i }} vs. Team name {{ i + 1 }}</td>
+      <td class="center aligned">1N2</td>
+      <td class="center aligned">{{ random(12, 35) / 10 | number_format(2, ',') }}</td>
+      <td class="center aligned"><a href="./?pronostic"><i class="receipt icon"></i></a></td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

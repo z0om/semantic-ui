@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My website{% endblock %}</title>
+    <link href="assets/semantic/semantic.min.css" rel="stylesheet"/>
+    <link href="assets/lesparieurs.css" rel="stylesheet"/>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+{% block body %}{% endblock %}
+<script src="assets/jquery.min.js"></script>
+<script src="assets/semantic/semantic.min.js"></script>
+<script src="assets/lesparieurs.js"></script>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

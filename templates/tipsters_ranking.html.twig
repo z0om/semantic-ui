@@ -1,0 +1,59 @@
+{% extends '_base.wm.html.twig' %}
+
+{% block content %}
+<div class="ui grid">
+  <div class="fourteen wide column">
+  <h1>Classement des pronostiqueurs {% if period_selected != period_last %}<span class="histo">» {{ period_selected }}</span>{% endif %}</h1>
+  </div>
+  <div class="two wide column">
+  <div class="ui icon right floated dropdown button">
+  <i class="clock icon"></i>
+  <div class="menu">
+    {% for statistic in statistics %}
+      {% if loop.first %}
+        {% if statistic == period_selected %}
+        <div class="item active">{{ period_last }}</div>
+        {% else %}
+        <a href="#" class="item">{{ period_last }}</a>
+        {% endif %}
+      {% else %}
+        {% if statistic == period_selected %}
+        <div class="item active">{{ statistic }}</div>
+        {% else %}
+        <a href="#" class="item{% if statistic == period_selected %} active{% endif %}">{{ statistic }}</a>
+        {% endif %}
+      
+      {% endif %}
+    {% endfor %}
+</div>
+</div>
+  </div>
+</div>
+
+<div class="ui horizontal cards">
+  {% for i in 1..8 %}
+    <div class="card">
+    <div class="image">
+      <img src="https://fakeimg.pl/150x150/282828/eae0d0/?text=avatar {{ i }}">
+    </div>
+    <div class="content">
+      <div class="header">username {{ i }}</div>
+      <div class="meta">
+        <a>{{tipster.title}}</a>
+      </div>
+      <div class="description">
+        ROI : {{ random(0, 60) }}% - Réussite : {{ random(5, 80) }}%<br> 
+        Cote moyenne : {{ random(120, 300) / 100 }}<br>
+        Nombre de pronostics : {{ random(3, 200) }}<br>
+        <i class="arrow circle right icon"></i> <a href="?history">Voir son historique</a>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<div class="soz-center soz-margin-top50">
+<a href="#" class="big ui orange button">Postuler comme pronostiqueur</a>
+</div>
+
+{% endblock %}

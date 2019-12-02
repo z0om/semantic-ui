@@ -1,0 +1,116 @@
+{% extends '_base.wm.html.twig' %}
+{% set status = [ 'blue', 'green', 'red', 'grey' ] %}
+{% set icon = [ 'clock outline', 'check', 'x icon', 'bars' ] %}
+{% set rand = random(0,3) %}
+
+{% block content %}
+<div class="ui segment" style="height:300px;background: url('https://fakeimg.pl/840x300/282828/eae0d0/?text=to do')">
+  
+</div>
+
+<h2 class="ui dividing header">Analyse</h2>
+
+<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+
+<div style="text-align: center">
+<div class="ui {{ status[rand] }} big label">
+  <i class="{{ icon[rand] }} icon"></i>
+  Both teams to score : yes
+  <div class="detail">{{ random(120,350) / 100 | number_format(2, ',', ' ') }}</div>
+</div>
+</div>
+
+<h2 class="ui dividing header">Votre avis</h2>
+
+<div class="soz-center">
+    <div class="three ui buttons" style="width:300px">
+    <button class="ui button">1</button>
+    <button class="ui button" style="background:#DDD">Draw</button>
+    <button class="ui button">2</button>
+    </div>
+</div>
+
+<h2 class="ui dividing header">Commentaires</h2>
+
+<div class="ui comments">
+  <div class="comment">
+    <a class="avatar">
+      <img src="./assets/images/avatars/matt.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Matt</a>
+      <div class="metadata">
+        <span class="date">Today at 5:42PM</span>
+      </div>
+      <div class="text">
+        How artistic!
+      </div>
+      <div class="actions">
+        <a class="reply">Reply</a>
+      </div>
+    </div>
+  </div>
+  <div class="comment">
+    <a class="avatar">
+      <img src="./assets/images/avatars/elliot.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Elliot Fu</a>
+      <div class="metadata">
+        <span class="date">Yesterday at 12:30AM</span>
+      </div>
+      <div class="text">
+        <p>This has been very useful for my research. Thanks as well!</p>
+      </div>
+      <div class="actions">
+        <a class="reply">Reply</a>
+      </div>
+    </div>
+    <div class="comments">
+      <div class="comment">
+        <a class="avatar">
+          <img src="./assets/images/avatars/jenny.jpg">
+        </a>
+        <div class="content">
+          <a class="author">Jenny Hess</a>
+          <div class="metadata">
+            <span class="date">Just now</span>
+          </div>
+          <div class="text">
+            Elliot you are always so right :)
+          </div>
+          <div class="actions">
+            <a class="reply">Reply</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="comment">
+    <a class="avatar">
+      <img src="./assets/images/avatars/joe.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Joe Henderson</a>
+      <div class="metadata">
+        <span class="date">5 days ago</span>
+      </div>
+      <div class="text">
+        Dude, this is awesome. Thanks so much
+      </div>
+      <div class="actions">
+        <a class="reply">Reply</a>
+      </div>
+    </div>
+  </div>
+  <form class="ui reply form">
+    <div class="field">
+      <textarea></textarea>
+    </div>
+    <div class="ui blue labeled submit icon button">
+      <i class="icon edit"></i> Add Reply
+    </div>
+  </form>
+</div>
+
+{% endblock %}

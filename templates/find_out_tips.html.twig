@@ -1,0 +1,42 @@
+{% extends '_base.wm.html.twig' %}
+
+{% block content %}
+<h1>Découvrir les pronostics</h1>
+
+<div class="ui three column grid">
+{% for i in 1..9 %}
+<div class="column">
+  <div class="ui fluid card">
+    <div class="blurring dimmable image">
+      <div class="ui dimmer">
+        <div class="content">
+          <div class="center">
+            <a href="?pronostic" class="ui inverted button">Voir le prono</a>
+          </div>
+        </div>
+      </div>
+      <img src="https://fakeimg.pl/440x320/282828/eae0d0/?text=pic {{ i }}">
+    </div>
+    <div class="content">
+      <a class="header">Marseille vs Brest</a>
+      <div class="meta">
+        <span class="date">Aujourd'hui à 20h45</span>
+      </div>
+    </div>
+    <div class="extra content">
+        <span class="left floated like">
+        <i class="comment icon"></i>
+        15
+        </span>
+        <span class="right floated star">
+        <img class="avatar mini ui image" src="https://www.gravatar.com/avatar/db545d117833834faba79cacf4869d04?size=200">
+        {# <i class="user icon"></i> #}
+        Thuvipan
+        </span>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+{% endblock %}
