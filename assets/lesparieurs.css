@@ -1,5 +1,9 @@
+body {
+    color: black;
+}
+
 .histo {
-	color:#666
+    color: #666
 }
 
 .pagination {
@@ -7,8 +11,9 @@
 }
 
 table.soz {
-	margin-top:30px !important 
+    margin-top: 30px !important
 }
+
 
 /*
 .ui.inverted.vertical.footer.segment {
@@ -17,38 +22,38 @@ table.soz {
 */
 
 .spacer {
-	margin-bottom: 40px
+    margin-bottom: 40px
 }
 
 .soz-center {
-	text-align: center
+    text-align: center
 }
 
 .soz-margin-top20 {
-	margin-top:20px !important
+    margin-top: 20px !important
 }
 
 .soz-margin-top50 {
-	margin-top:50px !important
+    margin-top: 50px !important
 }
 
 .soz-margin-top100 {
-	margin-top:100px !important
+    margin-top: 100px !important
 }
 
 .large.icon {
     font-size: 2.7rem;
- }
+}
 
 .ui.table thead th {
-	padding-top: 0.3em !important;
-	padding-bottom: 0.3em !important;
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
 }
 
 .odd-increase {
-	background:url(images/increase.gif) 95% 0 no-repeat;
+    background: url(images/increase.gif) 95% 0 no-repeat;
 }
 
 .odd-decrease {
-	background:url(images/decrease.gif) 95% 100% no-repeat;
+    background: url(images/decrease.gif) 95% 100% no-repeat;
 }
