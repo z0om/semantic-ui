@@ -1,19 +1,42 @@
 <div class="ui inverted menu">
-    <a class="item" href="?find_out_tips">Découvrir les pronostics</a>
-    <a class="item" href="?tipsters_ranking">Classement des pronostiqueurs</a>
-    <a class="item" href="?bookmakers_benchmark">Comparer les bookmakers</a>
-    <div class="ui dropdown item">
-    Matchs
-    <i class="dropdown icon"></i>
-        <div class="menu">
-            {% for sport in 1..4 %}
-            <a class="item" href="?sport">Sport {{ sport }}</a>
-            {% endfor %}
-        </div>
-    </div>
+	<a class="item" href="?find_out_tips">Découvrir les pronostics</a>
+	<a class="item" href="?tipsters_ranking">Classement des pronostiqueurs</a>
+	<a class="item" href="?bookmakers_benchmark">Comparer les bookmakers</a>
+	<div class="ui dropdown item">
+		Matchs
+		<i class="dropdown icon"></i>
+		<div class="menu">
+			{% for sport in 1..4 %}
+				<a class="item" href="?sport">Sport
+					{{ sport }}</a>
+			{% endfor %}
+		</div>
+	</div>
 
-    <div class="right menu">
-        <a class="item" href="?register">S'enregistrer</a>
-        <a class="item" href="?login">S'identifier</a>
-    </div>
+	<div class="right menu">
+		<a class="item" href="?register">S'enregistrer</a>
+		<a class="item" href="?login">S'identifier</a>
+	</div>
+</div>
+
+<div>
+	<div class="ui fluid selection dropdown">
+		{# <div class="text">More</div> #}
+		{# <i class="dropdown icon"></i> #}<i class="bars icon"> </i>
+		<div class="menu">
+			<a class="item" href="?find_out_tips">Découvrir les pronostics</a>
+			<a class="item" href="?tipsters_ranking">Classement des pronostiqueurs</a>
+			<a class="item" href="?bookmakers_benchmark">Comparer les bookmakers</a>
+			<div class="ui dropdown item">
+				Matchs
+				<i class="dropdown icon"></i>
+				<div class="menu">
+					{% for sport in 1..4 %}
+						<a class="item" href="?sport">Sport
+							{{ sport }}</a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

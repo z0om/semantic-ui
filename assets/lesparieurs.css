@@ -1,7 +1,3 @@
-body {
-    color: black;
-}
-
 .histo {
     color: #666
 }
@@ -56,4 +52,37 @@ table.soz {
 
 .odd-decrease {
     background: url(images/decrease.gif) 95% 100% no-repeat;
+}
+
+
+/* ---------------------------- */
+
+@media only screen and (min-width: 995px) {
+    .ui.fluid.selection.dropdown {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 994px) {
+    .ui.inverted.menu {
+        display: none;
+    }
+    /* .ui.fluid.selection.dropdown { */
+    .ui.dropdown {
+        margin: 14px !important;
+        background-color: #282828 !important;
+        color: white !important;
+        right: 3vw;
+    }
+    .ui.dropdown .menu {
+        background-color: #282828 !important;
+        max-height: max-content !important;
+    }
+    .ui.dropdown .menu>.item {
+        color: #d4d4d4 !important;
+        border-top-width: 0px !important;
+    }
+    .ui.dropdown.item .menu {
+        max-height: 200px !important;
+    }
 }
