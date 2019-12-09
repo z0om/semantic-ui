@@ -33,9 +33,13 @@ table.soz {
     margin-top: 50px !important
 }
 
-.soz-margin-top100 {
+
+/* Sticky Footer solved */
+
+
+/* .soz-margin-top100 {
     margin-top: 100px !important
-}
+} */
 
 .large.icon {
     font-size: 2.7rem;
@@ -57,17 +61,25 @@ table.soz {
 
 /* ---------------------------- */
 
-@media (max-height: 950px) {
-    .soz-margin-top100 {
-        margin-top: 180px !important
-    }
+
+/* Sticky Footer */
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-.foot {
-    position: relative !important;
-    bottom: 0 !important;
-    width: 100%;
+.push-footer {
+    flex: 1;
 }
+
+.footer {
+    margin-top: 50px;
+}
+
+
+/* Right/centered responsive register/login/recover */
 
 .fond {
     /* background-color: black; */
@@ -85,6 +97,9 @@ table.soz {
     padding: 10px;
 }
 
+
+/* SideBar */
+
 @media only screen and (min-width: 995px) {
     .ui.fluid.selection.dropdown {
         display: none;
@@ -101,22 +116,4 @@ table.soz {
     .ui.inverted.menu.empty {
         color: white;
     }
-    /* .ui.dropdown {
-        margin: 14px !important;
-        background-color: #282828 !important;
-        color: white !important;
-        right: 3vw;
-    } */
-    /*
-    .ui.dropdown .menu {
-        background-color: #282828 !important;
-        max-height: max-content !important;
-    }
-    .ui.dropdown .menu>.item {
-        color: #d4d4d4 !important;
-        border-top-width: 0px !important;
-    }
-    .ui.dropdown.item .menu {
-        max-height: 200px !important;
-    } */
 }
