@@ -22,7 +22,7 @@
       <td><i class="futbol outline icon"></i> Event name {{ i }}</td>
       <td>Team name {{ i }} vs. Team name {{ i + 1 }}</td>
       <td class="center aligned">1N2</td>
-      <td class="center aligned">{{ random(12, 35) / 10 | number_format(2, ',') }}</td>
+      <td class="center aligned">{{ random(12, 35) / 10 | number_format }}</td>
       <td class="center aligned"><a href="./?pronostic"><i class="receipt icon"></i></a></td>
     </tr>
 {% endfor %}
