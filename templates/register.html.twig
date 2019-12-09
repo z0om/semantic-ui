@@ -1,40 +1,52 @@
-{% extends '_base.wo.html.twig' %}
+{% extends '_base.wo.html.twig' %} {% block content %}
 
-{% block content %}
 
-	<div class="ui center aligned header">S'inscrire</div>
-	<div class="content">
-		<form class="ui form">
-			<div class="field">
-				<label>Pseudo</label>
-				<input type="text">
-			</div>
-			<div class="field">
-				<label>Email</label>
-				<input type="text">
-			</div>
-			<div class="field">
-				<label>Mot de passe</label>
-				<input type="password">
-			</div>
-			<br>
-			<button class="fluid ui button">S'inscrire</button>
-		</form>
-		<h5 class="ui horizontal divider header">
-			ou avec
-		</h5>
-		<br>
-		<div class="ui equal width grid">
-			<div class="column">
-				<button class="fluid ui facebook button">
+<div class="ui grid ">
+    <div class="row fond">
+        <!-- <div class="column"></div> -->
+        <div class="six wide computer sixteen wide mobile column right floated front ">
+            <div class="wrapfront">
+
+                <div class="ui center aligned header">S'inscrire</div>
+                <div class="content">
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Pseudo</label>
+                            <input type="text">
+                        </div>
+                        <div class="field">
+                            <label>Email</label>
+                            <input type="text">
+                        </div>
+                        <div class="field">
+                            <label>Mot de passe</label>
+                            <input type="password">
+                        </div>
+                        <br>
+                        <button class="fluid ui button">S'inscrire</button>
+                    </form>
+                    <h5 class="ui horizontal divider header">
+                        ou avec
+                    </h5>
+                    <br>
+                    <div class="ui equal width grid">
+                        <div class="column">
+                            <button class="fluid ui facebook button">
 					<i class="facebook f icon"></i>
 					S'inscrire avec Facebook</button>
-			</div>
-		</div>
-	</div>
-	<div class="actions">
-		Déjà un compte ?
-		<a href="#" onclick="ajaxModalbox('signin')">Connectez-vous</a>.
-	</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions">
+                    Déjà un compte ?
+                    <a href="#" onclick="ajaxModalbox('signin')">Connectez-vous</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
 
 {% endblock %}
