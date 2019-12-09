@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>
-			{% block title %}My website
-			{% endblock %}
-		</title>
-		<link href="assets/semantic/semantic.min.css" rel="stylesheet"/>
-		<link href="assets/lesparieurs.css" rel="stylesheet"/> {% block stylesheets %}{% endblock %}
-		</head>
 
-		<body>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}My website {% endblock %}
+    </title>
+    <link href="assets/semantic/semantic.min.css" rel="stylesheet" />
+    <link href="assets/lesparieurs.css" rel="stylesheet" /> {% block stylesheets %}{% endblock %}
+</head>
 
-			<div class="ui left vertical menu sidebar inverted">
-				<a class="item" href="?find_out_tips">Découvrir les pronostics</a>
-				<a class="item" href="?tipsters_ranking">Classement des pronostiqueurs</a>
-				<a class="item" href="?bookmakers_benchmark">Comparer les bookmakers</a>
+<body>
 
-				<div class="ui item">
-					<div class="ui dropdown fluid selection inverted">
-						Matchs
-						<i class="dropdown icon"></i>
-						<div class="menu">
-							{% for sport in 1..4 %}
-								<a class="item" href="?sport">Sport
-									{{ sport }}</a>
-							{% endfor %}
-						</div>
-					</div>
-				</div>
+    <div class="ui left vertical menu sidebar inverted">
+        <a class="item" href="?find_out_tips">Découvrir les pronostics</a>
+        <a class="item" href="?tipsters_ranking">Classement des pronostiqueurs</a>
+        <a class="item" href="?bookmakers_benchmark">Comparer les bookmakers</a>
 
+        <div class="ui item">
+            <div class="ui dropdown fluid selection inverted">
+                Matchs
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    {% for sport in 1..4 %}
+                    <a class="item" href="?sport">Sport
+									{{ sport }}</a> {% endfor %}
+                </div>
+            </div>
+        </div>
 
-			</div>
-
-
-			<div class="pusher"> 
-      {% block body %}{% endblock %}
-				</div>
+        <!-- <div class=" menu"> -->
+        <a class="item" href="?register">S'enregistrer</a>
+        <a class="item" href="?login">S'identifier</a>
+        <!-- </div> -->
 
 
-        
-				<script src="assets/jquery.min.js"></script>
-				<script src="assets/semantic/semantic.min.js"></script>
-				<script src="assets/lesparieurs.js"></script>
-				{% block javascripts %}{% endblock %}
-			</body>
+    </div>
 
 
-		</html>
+    <div class="pusher">
+        {% block body %}{% endblock %}
+    </div>
+
+
+
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/semantic/semantic.min.js"></script>
+    <script src="assets/lesparieurs.js"></script>
+    {% block javascripts %}{% endblock %}
+</body>
+
+
+</html>

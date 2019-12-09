@@ -57,8 +57,14 @@ table.soz {
 
 /* ---------------------------- */
 
+@media (max-height: 950px) {
+    .soz-margin-top100 {
+        margin-top: 180px !important
+    }
+}
+
 .foot {
-    position: absolute !important;
+    position: relative !important;
     bottom: 0 !important;
     width: 100%;
 }

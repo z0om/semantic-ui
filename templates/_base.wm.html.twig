@@ -1,125 +1,120 @@
-{% extends 'includes/base.html.twig' %}
+{% extends 'includes/base.html.twig' %} {% block body %}
+<div class="ui container">
+    <div class=" ui middle aligned stackable two column grid ">
+        <div class="column ">
+            <a href="./ "><img class="ui fluid image " src="https://fakeimg.pl/650x180/282828/eae0d0/?text=logo "></a>
+        </div>
+        <div class="column "><img class="ui centered image " src="https://fakeimg.pl/460x68/bbb/999/?text=ads "></div>
+    </div>
+    {% include 'includes/navbar.html.twig' %}
 
-{% block body %}
-	<div class="ui container">
-		<div class="ui middle aligned stackable two column grid">
-			<div class="column">
-				<a href="./"><img class="ui fluid image" src="https://fakeimg.pl/650x180/282828/eae0d0/?text=logo"></a>
-			</div>
-			<div class="column"><img class="ui centered image" src="https://fakeimg.pl/460x68/bbb/999/?text=ads"></div>
-		</div>
-		{% include 'includes/navbar.html.twig' %}
+    <div class="ui stackable grid stackable ">
+        <div class="row ">
+            <div class="twelve wide column ">
+                {% block content %}{% endblock %}
+            </div>
+            <div class="four wide column ">
+                <h4>
+                    <i class="trophy icon "></i> Gagnant du mois dernier</h4>
 
-		<div class="ui stackable grid stackable">
-			<div class="row">
-				<div class="twelve wide column">
-					{% block content %}{% endblock %}
-				</div>
-				<div class="four wide column">
-					<h4>
-						<i class="trophy icon"></i>
-						Gagnant du mois dernier</h4>
-
-					<div class="ui cards">
-						<div class="card" style="width:100%">
-							<div class="content">
-								<img class="right floated rounded mini ui image" src="https://www.gravatar.com/avatar/db545d117833834faba79cacf4869d04?size=200&amp;d=http%3A%2F%2Flocalhost%3A8000%2Fimages%2Favatars%2Fdefault.png">
-								<div class="header">
-									Sebastien
-								</div>
-								<div class="meta">
-									Fondateur des parieurs.com
-								</div>
-								<div class="description">
-									S&#039;est mis aux paris sportifs il y a 5/6 ans, avec plus ou moins de réussite et un semblant de stratégie. Avec le temps, tout ça s&#039;est affiné pour devenir un parieur gagnant.
-								</div>
-							</div>
-							<div class="extra content">
-								<span class="right floated">
-									<i class="external alternate icon"></i>
-									<a href="#" target="_blank">Son compte Twitter</a>
+                <div class="ui cards ">
+                    <div class="card " style="width:100% ">
+                        <div class="content ">
+                            <img class="right floated rounded mini ui image " src="https://www.gravatar.com/avatar/db545d117833834faba79cacf4869d04?size=200&amp;d=http%3A%2F%2Flocalhost%3A8000%2Fimages%2Favatars%2Fdefault.png ">
+                            <div class="header ">
+                                Sebastien
+                            </div>
+                            <div class="meta ">
+                                Fondateur des parieurs.com
+                            </div>
+                            <div class="description ">
+                                S&#039;est mis aux paris sportifs il y a 5/6 ans, avec plus ou moins de réussite et un semblant de stratégie. Avec le temps, tout ça s&#039;est affiné pour devenir un parieur gagnant.
+                            </div>
+                        </div>
+                        <div class="extra content ">
+                            <span class="right floated ">
+									<i class="external alternate icon "></i>
+									<a href="# " target="_blank ">Son compte Twitter</a>
 								</span>
-							</div>
-						</div>
-					</div>
+                        </div>
+                    </div>
+                </div>
 
 
-					<h4>
-						<i class="cubes icon"></i>Classement pronostiqueurs</h4>
+                <h4>
+                    <i class="cubes icon "></i>Classement pronostiqueurs</h4>
 
-					<table class="ui very basic celled compact table unstackable">
-						<thead>
-							<tr>
-								<th class="center aligned">#</th>
-								<th class="center aligned">Tipsters</th>
-								<th class="center aligned">Réus.</th>
-								<th class="center aligned">ROI</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="center aligned">
-									<span class="ui yellow circular label">1</span>
-								</td>
-								<td>
-									<a href="/pronostiqueurs/hatem2">Hatem2</a>
-								</td>
-								<td class="center aligned">55%</td>
-								<td class="center aligned">13%</td>
-							</tr>
-							<tr>
-								<td class="center aligned">
-									<span class="ui grey circular label">2</span>
-								</td>
-								<td>
-									<a href="/pronostiqueurs/eric">Eric</a>
-								</td>
-								<td class="center aligned">12%</td>
-								<td class="center aligned">11%</td>
-							</tr>
-							<tr>
-								<td class="center aligned">
-									<span class="ui brown circular label">3</span>
-								</td>
-								<td>
-									<a href="/pronostiqueurs/sebastien">Sebastien</a>
-								</td>
-								<td class="center aligned">100%</td>
-								<td class="center aligned">0%</td>
-							</tr>
-						</tbody>
-					</table>
+                <table class="ui very basic celled compact table unstackable ">
+                    <thead>
+                        <tr>
+                            <th class="center aligned ">#</th>
+                            <th class="center aligned ">Tipsters</th>
+                            <th class="center aligned ">Réus.</th>
+                            <th class="center aligned ">ROI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned ">
+                                <span class="ui yellow circular label ">1</span>
+                            </td>
+                            <td>
+                                <a href="/pronostiqueurs/hatem2 ">Hatem2</a>
+                            </td>
+                            <td class="center aligned ">55%</td>
+                            <td class="center aligned ">13%</td>
+                        </tr>
+                        <tr>
+                            <td class="center aligned ">
+                                <span class="ui grey circular label ">2</span>
+                            </td>
+                            <td>
+                                <a href="/pronostiqueurs/eric ">Eric</a>
+                            </td>
+                            <td class="center aligned ">12%</td>
+                            <td class="center aligned ">11%</td>
+                        </tr>
+                        <tr>
+                            <td class="center aligned ">
+                                <span class="ui brown circular label ">3</span>
+                            </td>
+                            <td>
+                                <a href="/pronostiqueurs/sebastien ">Sebastien</a>
+                            </td>
+                            <td class="center aligned ">100%</td>
+                            <td class="center aligned ">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-					<a href="/pronostiqueurs" class="ui left floated tiny button">Suite du classement</a>
-					<div style="clear:both"></div>
+                <a href="/pronostiqueurs " class="ui left floated tiny button ">Suite du classement</a>
+                <div style="clear:both "></div>
 
 
-					<h4>
-						<i class="splotch icon"></i>Meilleurs bookmakers</h4>
+                <h4>
+                    <i class="splotch icon "></i>Meilleurs bookmakers</h4>
 
-					<table class="ui compact very basic celled table unstackable">
-						<tbody>
-							<tr>
-								<td class="center aligned"><img src="./assets/images/bookmakers/parionssport.png"></td>
-								<td class="center aligned"><img src="./assets/images/bookmakers/winamax.png"></td>
-							</tr>
-							<tr>
-								<td class="center aligned"><img src="./assets/images/bookmakers/betclic.png"></td>
-								<td class="center aligned"><img src="./assets/images/bookmakers/unibet.png"></td>
-							</tr>
-							<tr>
-								<td class="center aligned"><img src="./assets/images/bookmakers/zebet.png"></td>
-								<td class="center aligned"><img src="./assets/images/bookmakers/pmu.png"></td>
-							</tr>
-						</tbody>
-					</table>
-					<a href="./?bookmakers_benchmark" class="ui left floated tiny button">Suite du classement</a>
-					<div style="clear:both"></div>
-				</div>
-			</div>
-		</div>
+                <table class="ui compact very basic celled table unstackable ">
+                    <tbody>
+                        <tr>
+                            <td class="center aligned "><img src="./assets/images/bookmakers/parionssport.png "></td>
+                            <td class="center aligned "><img src="./assets/images/bookmakers/winamax.png "></td>
+                        </tr>
+                        <tr>
+                            <td class="center aligned "><img src="./assets/images/bookmakers/betclic.png "></td>
+                            <td class="center aligned "><img src="./assets/images/bookmakers/unibet.png "></td>
+                        </tr>
+                        <tr>
+                            <td class="center aligned "><img src="./assets/images/bookmakers/zebet.png "></td>
+                            <td class="center aligned "><img src="./assets/images/bookmakers/pmu.png "></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="./?bookmakers_benchmark " class="ui left floated tiny button ">Suite du classement</a>
+                <div style="clear:both "></div>
+            </div>
+        </div>
+    </div>
 
-	</div>
-	{% include 'includes/footer.html.twig' %}
-
-{% endblock %}
+</div>
+{% include 'includes/footer.html.twig' %} {% endblock %}
