@@ -10,7 +10,6 @@ table.soz {
     margin-top: 30px !important
 }
 
-
 /*
 .ui.inverted.vertical.footer.segment {
 	margin-top:50px
@@ -54,26 +53,38 @@ table.soz {
     background: url(images/decrease.gif) 95% 100% no-repeat;
 }
 
-
 /* ---------------------------- */
 
 @media only screen and (min-width: 995px) {
     .ui.fluid.selection.dropdown {
         display: none;
     }
+    .ui.inverted.menu.empty {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 994px) {
-    .ui.inverted.menu {
+
+    .ui.inverted.menu.full {
         display: none;
     }
-    /* .ui.fluid.selection.dropdown { */
-    .ui.dropdown {
+    .ui.inverted.menu.empty {
+        color: white;
+    }
+
+
+    /* .ui.dropdown {
         margin: 14px !important;
         background-color: #282828 !important;
         color: white !important;
         right: 3vw;
-    }
+    } */
+
+
+
+
+    /*
     .ui.dropdown .menu {
         background-color: #282828 !important;
         max-height: max-content !important;
@@ -84,5 +95,5 @@ table.soz {
     }
     .ui.dropdown.item .menu {
         max-height: 200px !important;
-    }
+    } */
 }

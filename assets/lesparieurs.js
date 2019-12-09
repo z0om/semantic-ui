@@ -1,11 +1,11 @@
 $('.tooltip').popup();
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('.ui.dropdown').dropdown();
 });
 
 $('.message .close')
-    .on('click', function() {
+    .on('click', function () {
         $(this)
             .closest('.message')
             .transition('fade');
@@ -17,3 +17,8 @@ $('.card .dimmable').dimmer({
 
 
 // ----
+
+$('.sider').on('click', function () {
+    $('.ui.left.vertical.menu.sidebar')
+        .sidebar('toggle');
+});
