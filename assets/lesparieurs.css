@@ -98,6 +98,14 @@ table.soz {
 }
 
 
+/* Carte centrées sur tipster ranking */
+
+.center-card {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+
 /* SideBar */
 
 @media only screen and (min-width: 995px) {
